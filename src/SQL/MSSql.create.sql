@@ -70,6 +70,37 @@ CREATE TABLE [СпрНомен] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [ТЧПлЗНаД] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [ВремПриб] DATETIME  NULL,
+
+	 [КолЧас] REAL  NULL,
+
+	 [ОбГруз] REAL  NULL,
+
+	 [ОбРаб] VARCHAR(255)  NULL,
+
+	 [СтЗатрат] VARCHAR(255)  NULL,
+
+	 [СпрВидыРаб] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрЕдИзмер] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрКонтрАг] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрНомен] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрТипТрансСр] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрТранспСр] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [ДокПланЗаНаД] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [СпрКонтрАг] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

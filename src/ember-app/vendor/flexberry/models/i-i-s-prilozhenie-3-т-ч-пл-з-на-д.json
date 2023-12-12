@@ -1,0 +1,141 @@
+﻿{
+  "name": "IISPrilozhenie_3ТЧПлЗНаД",
+  "modelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д",
+  "className": "ТЧПлЗНаД",
+  "nameSpace": "IIS.Prilozhenie_3",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времПриб",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колЧас",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "обГруз",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "обРаб",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стЗатрат",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрВидыРаб",
+      "relatedTo": "i-i-s-prilozhenie-3-спр-виды-раб",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрЕдИзмер",
+      "relatedTo": "i-i-s-prilozhenie-3-спр-ед-измер",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрКонтрАг",
+      "relatedTo": "i-i-s-prilozhenie-3-спр-контр-аг",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрНомен",
+      "relatedTo": "i-i-s-prilozhenie-3-спр-номен",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрТипТрансСр",
+      "relatedTo": "i-i-s-prilozhenie-3-спр-тип-транс-ср",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрТранспСр",
+      "relatedTo": "i-i-s-prilozhenie-3-спр-трансп-ср",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докПланЗаНаД",
+      "relatedTo": "i-i-s-prilozhenie-3-док-план-за-на-д",
+      "inverse": "тЧПлЗНаД"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧПлЗНаДE",
+      "modelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Контрагент",
+          "lookupValueField": "контрагент",
+          "relationName": "СпрКонтрАг",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Контрагент",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Контрагент",
+          "name": "спрКонтрАг",
+          "relatedTo": "i-i-s-prilozhenie-3-спр-контр-аг",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

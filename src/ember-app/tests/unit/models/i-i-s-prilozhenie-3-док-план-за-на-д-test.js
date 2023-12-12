@@ -12,6 +12,7 @@ moduleForModel('i-i-s-prilozhenie-3-док-план-за-на-д', 'Unit | Model
     'model:i-i-s-prilozhenie-3-спр-пользов',
     'model:i-i-s-prilozhenie-3-спр-тип-транс-ср',
     'model:i-i-s-prilozhenie-3-спр-трансп-ср',
+    'model:i-i-s-prilozhenie-3-т-ч-пл-з-на-д',
     'model:i-i-s-prilozhenie-3-факт-выпол-раб',
     'validator:ds-error',
     'validator:presence',

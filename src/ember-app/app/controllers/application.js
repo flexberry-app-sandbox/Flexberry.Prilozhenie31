@@ -28,61 +28,60 @@ export default Controller.extend({
             link: 'i-i-s-prilozhenie-3-док-план-за-на-д-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-док-план-за-на-д-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-док-план-за-на-д-l.title'),
-            icon: 'paperclip',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-3-спр-тип-транс-ср-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-тип-транс-ср-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-тип-транс-ср-l.title'),
-            icon: 'table',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-3-спр-трансп-ср-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-трансп-ср-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-трансп-ср-l.title'),
-            icon: 'building',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-3-спр-номен-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-номен-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-номен-l.title'),
-            icon: 'building',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-3-спр-контр-аг-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-контр-аг-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-контр-аг-l.title'),
-            icon: 'edit',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-3-спр-ед-измер-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-ед-измер-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-ед-измер-l.title'),
-            icon: 'briefcase',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-3-спр-виды-раб-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-виды-раб-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-виды-раб-l.title'),
-            icon: 'edit',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-3-спр-объект-стр-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-объект-стр-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-объект-стр-l.title'),
-            icon: 'phone',
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-3-спр-пользов-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-пользов-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-спр-пользов-l.title'),
-            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-3-факт-выпол-раб-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-факт-выпол-раб-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-3.i-i-s-prilozhenie-3-факт-выпол-раб-l.title'),
-            icon: 'archive',
+            icon: 'chart line',
             children: null
           }]
         }

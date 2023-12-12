@@ -133,4 +133,18 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel.спрОбъектСтр "наименование" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-3-док-план-за-на-д-e.тЧПлЗНаД-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="тЧПлЗНаДGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.тЧПлЗНаД
+      content=model.тЧПлЗНаД
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "тЧПлЗНаД" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-3-док-план-за-на-д-e-тЧПлЗНаД=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "тЧПлЗНаД" "message")}}
+  </div>
 </form>

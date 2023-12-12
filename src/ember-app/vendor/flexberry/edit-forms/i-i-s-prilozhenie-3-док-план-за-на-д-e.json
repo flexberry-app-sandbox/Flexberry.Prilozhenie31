@@ -23,6 +23,14 @@
       "relationName": "СпрОбъектСтр",
       "projection": "СпрОбъектСтрL",
       "detailModelName": null
+    },
+    {
+      "master": "спрКонтрАг",
+      "displayAttributeName": "контрагент",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрКонтрАг",
+      "projection": "СпрКонтрАгL",
+      "detailModelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д"
     }
   ],
   "external": false,

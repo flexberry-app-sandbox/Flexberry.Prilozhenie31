@@ -10,7 +10,8 @@ export let Model = Mixin.create({
   номер: DS.attr('number'),
   спрКонтрАг: DS.belongsTo('i-i-s-prilozhenie-3-спр-контр-аг', { inverse: null, async: false }),
   спрОбъектСтр: DS.belongsTo('i-i-s-prilozhenie-3-спр-объект-стр', { inverse: null, async: false }),
-  спрПользов: DS.belongsTo('i-i-s-prilozhenie-3-спр-пользов', { inverse: null, async: false })
+  спрПользов: DS.belongsTo('i-i-s-prilozhenie-3-спр-пользов', { inverse: null, async: false }),
+  тЧПлЗНаД: DS.hasMany('i-i-s-prilozhenie-3-т-ч-пл-з-на-д', { inverse: 'докПланЗаНаД', async: false })
 });
 
 export let ValidationRules = {
@@ -55,6 +56,13 @@ export let ValidationRules = {
       validator('presence', true),
     ],
   },
+  тЧПлЗНаД: {
+    descriptionKey: 'models.i-i-s-prilozhenie-3-док-план-за-на-д.validations.тЧПлЗНаД.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {
@@ -70,7 +78,12 @@ export let defineProjections = function (modelClass) {
     }, { index: 5 }),
     спрОбъектСтр: belongsTo('i-i-s-prilozhenie-3-спр-объект-стр', 'Объект строительства', {
       наименование: attr('Объект строительства', { index: 8 })
-    }, { index: 7 })
+    }, { index: 7 }),
+    тЧПлЗНаД: hasMany('i-i-s-prilozhenie-3-т-ч-пл-з-на-д', 'Плановая заявка на день', {
+      спрКонтрАг: belongsTo('i-i-s-prilozhenie-3-спр-контр-аг', 'Контрагент', {
+        наименование: attr('Контрагент', { index: 1 })
+      }, { index: 0, displayMemberPath: 'контрагент' })
+    })
   });
 
   modelClass.defineProjection('ДокПланЗаНаДL', 'i-i-s-prilozhenie-3-док-план-за-на-д', {
