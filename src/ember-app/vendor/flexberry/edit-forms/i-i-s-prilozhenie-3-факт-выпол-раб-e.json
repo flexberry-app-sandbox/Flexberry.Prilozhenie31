@@ -55,6 +55,22 @@
       "relationName": "ТЧФактВыпР.СпрТранспСр",
       "projection": "СпрТранспСрL",
       "detailModelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р"
+    },
+    {
+      "master": "спрТипТрансСр",
+      "displayAttributeName": "типы транспортного средства",
+      "required": true,
+      "relationName": "ТЧФактВыпР.СпрТипТрансСр",
+      "projection": "СпрТипТрансСрL",
+      "detailModelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р"
+    },
+    {
+      "master": "спрЕдИзмер",
+      "displayAttributeName": "единицы измерения",
+      "required": true,
+      "relationName": "ТЧФактВыпР.СпрЕдИзмер",
+      "projection": "СпрЕдИзмерL",
+      "detailModelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р"
     }
   ],
   "external": false,

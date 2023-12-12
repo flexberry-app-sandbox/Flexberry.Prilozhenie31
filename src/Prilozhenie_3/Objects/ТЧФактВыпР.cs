@@ -29,18 +29,33 @@ namespace IIS.Prilozhenie_3
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТЧФактВыпРE", new string[] {
+            "СтатЗатр as \'Статья затрат\'",
             "СпрНомен as \'Номенклатура\'",
             "СпрНомен.Наименование as \'Номенклатура\'",
             "СпрКонтрАг as \'Контрагент\'",
             "СпрКонтрАг.Наименование as \'Контрагент\'",
             "СпрВидыРаб as \'Виды работ\'",
             "СпрВидыРаб.Наименование as \'Виды работ\'",
+            "ОбРаб as \'Объем работы\'",
             "СпрТранспСр as \'Транспортные средства\'",
-            "СпрТранспСр.Наименование as \'Транспортные средства\'"})]
+            "СпрТранспСр.Наименование as \'Транспортные средства\'",
+            "СпрТипТрансСр",
+            "СпрТипТрансСр.Наименование as \'Типы транспортного средства\'",
+            "ВрПриб as \'Время прибытия\'",
+            "ВрУб as \'Время убытия\'",
+            "КлЧасНОб as \'Количество часов на объекте\'",
+            "КдПрост as \'Код простоя\'",
+            "КолЧасПр as \'Количество часов простоя\'",
+            "КолЧасРаб as \'Количество часов работы\'",
+            "ОбГруз as \'Объем груза\'",
+            "СпрЕдИзмер as \'Единицы измерения\'",
+            "СпрЕдИзмер.Наименование as \'Единицы измерения\'"})]
     [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрНомен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номенклатура")]
     [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрКонтрАг", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Контрагент")]
     [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрВидыРаб", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Виды работ")]
     [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрТранспСр", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Транспортные средства")]
+    [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрТипТрансСр", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Типы транспортного средства")]
+    [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрЕдИзмер", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Единицы измерения")]
     public class ТЧФактВыпР : ICSSoft.STORMNET.DataObject
     {
         

@@ -144,7 +144,62 @@
     {
       "name": "ТЧФактВыпРE",
       "modelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р",
-      "attrs": [],
+      "attrs": [
+        {
+          "name": "статЗатр",
+          "caption": "Статья затрат",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "обРаб",
+          "caption": "Объем работы",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "врПриб",
+          "caption": "Время прибытия",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "врУб",
+          "caption": "Время убытия",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "клЧасНОб",
+          "caption": "Количество часов на объекте",
+          "hidden": false,
+          "index": 14
+        },
+        {
+          "name": "кдПрост",
+          "caption": "Код простоя",
+          "hidden": false,
+          "index": 15
+        },
+        {
+          "name": "колЧасПр",
+          "caption": "Количество часов простоя",
+          "hidden": false,
+          "index": 16
+        },
+        {
+          "name": "колЧасРаб",
+          "caption": "Количество часов работы",
+          "hidden": false,
+          "index": 17
+        },
+        {
+          "name": "обГруз",
+          "caption": "Объем груза",
+          "hidden": false,
+          "index": 18
+        }
+      ],
       "belongsTo": [
         {
           "lookupValue": "Номенклатура",
@@ -157,10 +212,10 @@
               "name": "наименование",
               "caption": "Номенклатура",
               "hidden": false,
-              "index": 1
+              "index": 2
             }
           ],
-          "index": 0,
+          "index": 1,
           "type": "standard",
           "caption": "Номенклатура",
           "name": "спрНомен",
@@ -178,10 +233,10 @@
               "name": "наименование",
               "caption": "Контрагент",
               "hidden": false,
-              "index": 3
+              "index": 4
             }
           ],
-          "index": 2,
+          "index": 3,
           "type": "standard",
           "caption": "Контрагент",
           "name": "спрКонтрАг",
@@ -199,10 +254,10 @@
               "name": "наименование",
               "caption": "Виды работ",
               "hidden": false,
-              "index": 5
+              "index": 6
             }
           ],
-          "index": 4,
+          "index": 5,
           "type": "standard",
           "caption": "Виды работ",
           "name": "спрВидыРаб",
@@ -220,14 +275,56 @@
               "name": "наименование",
               "caption": "Транспортные средства",
               "hidden": false,
-              "index": 7
+              "index": 9
             }
           ],
-          "index": 6,
+          "index": 8,
           "type": "standard",
           "caption": "Транспортные средства",
           "name": "спрТранспСр",
           "relatedTo": "i-i-s-prilozhenie-3-спр-трансп-ср",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Типы транспортного средства",
+          "lookupValueField": "типы транспортного средства",
+          "relationName": "СпрТипТрансСр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Типы транспортного средства",
+              "hidden": false,
+              "index": 11
+            }
+          ],
+          "index": 10,
+          "type": "standard",
+          "caption": "",
+          "name": "спрТипТрансСр",
+          "relatedTo": "i-i-s-prilozhenie-3-спр-тип-транс-ср",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Единицы измерения",
+          "lookupValueField": "единицы измерения",
+          "relationName": "СпрЕдИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Единицы измерения",
+              "hidden": false,
+              "index": 20
+            }
+          ],
+          "index": 19,
+          "type": "standard",
+          "caption": "Единицы измерения",
+          "name": "спрЕдИзмер",
+          "relatedTo": "i-i-s-prilozhenie-3-спр-ед-измер",
           "inverse": null
         }
       ],

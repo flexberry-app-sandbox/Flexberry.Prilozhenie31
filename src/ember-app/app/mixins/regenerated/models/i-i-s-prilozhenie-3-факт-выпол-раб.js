@@ -80,18 +80,33 @@ export let defineProjections = function (modelClass) {
       наименование: attr('Объект строительства', { index: 8 })
     }, { index: 7 }),
     тЧФактВыпР: hasMany('i-i-s-prilozhenie-3-т-ч-факт-вып-р', 'Фактическое выполнение работ', {
+      статЗатр: attr('Статья затрат', { index: 0 }),
       спрНомен: belongsTo('i-i-s-prilozhenie-3-спр-номен', 'Номенклатура', {
-        наименование: attr('Номенклатура', { index: 1 })
-      }, { index: 0, displayMemberPath: 'номенклатура' }),
+        наименование: attr('Номенклатура', { index: 2 })
+      }, { index: 1, displayMemberPath: 'номенклатура' }),
       спрКонтрАг: belongsTo('i-i-s-prilozhenie-3-спр-контр-аг', 'Контрагент', {
-        наименование: attr('Контрагент', { index: 3 })
-      }, { index: 2, displayMemberPath: 'контрагент' }),
+        наименование: attr('Контрагент', { index: 4 })
+      }, { index: 3, displayMemberPath: 'контрагент' }),
       спрВидыРаб: belongsTo('i-i-s-prilozhenie-3-спр-виды-раб', 'Виды работ', {
-        наименование: attr('Виды работ', { index: 5 })
-      }, { index: 4, displayMemberPath: 'виды работ' }),
+        наименование: attr('Виды работ', { index: 6 })
+      }, { index: 5, displayMemberPath: 'виды работ' }),
+      обРаб: attr('Объем работы', { index: 7 }),
       спрТранспСр: belongsTo('i-i-s-prilozhenie-3-спр-трансп-ср', 'Транспортные средства', {
-        наименование: attr('Транспортные средства', { index: 7 })
-      }, { index: 6, displayMemberPath: 'транспортные средства' })
+        наименование: attr('Транспортные средства', { index: 9 })
+      }, { index: 8, displayMemberPath: 'транспортные средства' }),
+      спрТипТрансСр: belongsTo('i-i-s-prilozhenie-3-спр-тип-транс-ср', '', {
+        наименование: attr('Типы транспортного средства', { index: 11 })
+      }, { index: 10, displayMemberPath: 'типы транспортного средства' }),
+      врПриб: attr('Время прибытия', { index: 12 }),
+      врУб: attr('Время убытия', { index: 13 }),
+      клЧасНОб: attr('Количество часов на объекте', { index: 14 }),
+      кдПрост: attr('Код простоя', { index: 15 }),
+      колЧасПр: attr('Количество часов простоя', { index: 16 }),
+      колЧасРаб: attr('Количество часов работы', { index: 17 }),
+      обГруз: attr('Объем груза', { index: 18 }),
+      спрЕдИзмер: belongsTo('i-i-s-prilozhenie-3-спр-ед-измер', 'Единицы измерения', {
+        наименование: attr('Единицы измерения', { index: 20 })
+      }, { index: 19, displayMemberPath: 'единицы измерения' })
     })
   });
 
