@@ -30,8 +30,17 @@ namespace IIS.Prilozhenie_3
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТЧФактВыпРE", new string[] {
             "СпрНомен as \'Номенклатура\'",
-            "СпрНомен.Наименование as \'Номенклатура\'"})]
+            "СпрНомен.Наименование as \'Номенклатура\'",
+            "СпрКонтрАг as \'Контрагент\'",
+            "СпрКонтрАг.Наименование as \'Контрагент\'",
+            "СпрВидыРаб as \'Виды работ\'",
+            "СпрВидыРаб.Наименование as \'Виды работ\'",
+            "СпрТранспСр as \'Транспортные средства\'",
+            "СпрТранспСр.Наименование as \'Транспортные средства\'"})]
     [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрНомен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номенклатура")]
+    [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрКонтрАг", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Контрагент")]
+    [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрВидыРаб", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Виды работ")]
+    [MasterViewDefineAttribute("ТЧФактВыпРE", "СпрТранспСр", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Транспортные средства")]
     public class ТЧФактВыпР : ICSSoft.STORMNET.DataObject
     {
         

@@ -82,7 +82,16 @@ export let defineProjections = function (modelClass) {
     тЧФактВыпР: hasMany('i-i-s-prilozhenie-3-т-ч-факт-вып-р', 'Фактическое выполнение работ', {
       спрНомен: belongsTo('i-i-s-prilozhenie-3-спр-номен', 'Номенклатура', {
         наименование: attr('Номенклатура', { index: 1 })
-      }, { index: 0, displayMemberPath: 'номенклатура' })
+      }, { index: 0, displayMemberPath: 'номенклатура' }),
+      спрКонтрАг: belongsTo('i-i-s-prilozhenie-3-спр-контр-аг', 'Контрагент', {
+        наименование: attr('Контрагент', { index: 3 })
+      }, { index: 2, displayMemberPath: 'контрагент' }),
+      спрВидыРаб: belongsTo('i-i-s-prilozhenie-3-спр-виды-раб', 'Виды работ', {
+        наименование: attr('Виды работ', { index: 5 })
+      }, { index: 4, displayMemberPath: 'виды работ' }),
+      спрТранспСр: belongsTo('i-i-s-prilozhenie-3-спр-трансп-ср', 'Транспортные средства', {
+        наименование: attr('Транспортные средства', { index: 7 })
+      }, { index: 6, displayMemberPath: 'транспортные средства' })
     })
   });
 

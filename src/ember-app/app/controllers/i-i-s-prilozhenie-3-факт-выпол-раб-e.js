@@ -19,6 +19,42 @@ export default EditFormController.extend({
           };
           break;
 
+        case 'i-i-s-prilozhenie-3-т-ч-факт-вып-р+спрКонтрАг':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'контрагент',
+            required: true,
+            relationName: 'спрКонтрАг',
+            projection: 'СпрКонтрАгL',
+            autocomplete: true,
+          };
+          break;
+
+        case 'i-i-s-prilozhenie-3-т-ч-факт-вып-р+спрВидыРаб':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'виды работ',
+            required: true,
+            relationName: 'спрВидыРаб',
+            projection: 'СпрВидыРабL',
+            autocomplete: true,
+          };
+          break;
+
+        case 'i-i-s-prilozhenie-3-т-ч-факт-вып-р+спрТранспСр':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'транспортные средства',
+            required: true,
+            relationName: 'спрТранспСр',
+            projection: 'СпрТранспСрL',
+            autocomplete: true,
+          };
+          break;
+
       }
     }
 
