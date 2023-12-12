@@ -82,7 +82,19 @@ export let defineProjections = function (modelClass) {
     тЧПлЗНаД: hasMany('i-i-s-prilozhenie-3-т-ч-пл-з-на-д', 'Плановая заявка на день', {
       спрКонтрАг: belongsTo('i-i-s-prilozhenie-3-спр-контр-аг', 'Контрагент', {
         наименование: attr('Контрагент', { index: 1 })
-      }, { index: 0, displayMemberPath: 'контрагент' })
+      }, { index: 0, displayMemberPath: 'контрагент' }),
+      спрНомен: belongsTo('i-i-s-prilozhenie-3-спр-номен', 'Номенклатура', {
+        наименование: attr('Номенклатура', { index: 3 })
+      }, { index: 2, displayMemberPath: 'номенклатура' }),
+      спрВидыРаб: belongsTo('i-i-s-prilozhenie-3-спр-виды-раб', 'Виды работы', {
+        наименование: attr('Виды работы', { index: 5 })
+      }, { index: 4, displayMemberPath: 'виды работы' }),
+      спрТранспСр: belongsTo('i-i-s-prilozhenie-3-спр-трансп-ср', 'Транспортное средство', {
+        наименование: attr('Транспортное средство', { index: 7 })
+      }, { index: 6, displayMemberPath: 'транспортное средство' }),
+      спрТипТрансСр: belongsTo('i-i-s-prilozhenie-3-спр-тип-транс-ср', 'Типы транспортного средства', {
+        наименование: attr('Типы транспортного средства', { index: 9 })
+      }, { index: 8, displayMemberPath: 'типы транспортного средства' })
     })
   });
 

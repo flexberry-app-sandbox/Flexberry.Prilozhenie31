@@ -25,12 +25,13 @@ CREATE TABLE СпрТипТрансСр (
 
 CREATE TABLE СпрТранспСр (
  primaryKey UUID NOT NULL,
- Код INT NULL,
- ВидПеревоз VARCHAR(255) NULL,
- ГосНомер VARCHAR(255) NULL,
  ГрузПодъемВТон VARCHAR(255) NULL,
- Марка VARCHAR(255) NULL,
+ ГосНомер VARCHAR(255) NULL,
+ Код INT NULL,
  ЛицеКартНомер INT NULL,
+ ВидПеревоз VARCHAR(255) NULL,
+ Марка VARCHAR(255) NULL,
+ Наименование VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -45,11 +46,11 @@ CREATE TABLE СпрНомен (
 
 CREATE TABLE ТЧПлЗНаД (
  primaryKey UUID NOT NULL,
- СтЗатрат VARCHAR(255) NULL,
- ОбРаб VARCHAR(255) NULL,
  ВремПриб TIMESTAMP(3) NULL,
- КолЧас REAL NULL,
+ ОбРаб VARCHAR(255) NULL,
  ОбГруз REAL NULL,
+ СтЗатрат VARCHAR(255) NULL,
+ КолЧас REAL NULL,
  СпрТипТрансСр UUID NOT NULL,
  СпрВидыРаб UUID NOT NULL,
  СпрНомен UUID NOT NULL,

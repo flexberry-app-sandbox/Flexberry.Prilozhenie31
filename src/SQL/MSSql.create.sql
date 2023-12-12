@@ -52,6 +52,8 @@ CREATE TABLE [СпрТранспСр] (
 
 	 [Марка] VARCHAR(255)  NULL,
 
+	 [Наименование] VARCHAR(255)  NULL,
+
 	 PRIMARY KEY ([primaryKey]))
 
 

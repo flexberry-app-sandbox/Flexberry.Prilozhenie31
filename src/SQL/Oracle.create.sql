@@ -45,17 +45,19 @@ CREATE TABLE "СпрТранспСр"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"Код" NUMBER(10) NULL,
-
-	"ВидПеревоз" NVARCHAR2(255) NULL,
+	"ГрузПодъемВТон" NVARCHAR2(255) NULL,
 
 	"ГосНомер" NVARCHAR2(255) NULL,
 
-	"ГрузПодъемВТон" NVARCHAR2(255) NULL,
+	"Код" NUMBER(10) NULL,
+
+	"ЛицеКартНомер" NUMBER(10) NULL,
+
+	"ВидПеревоз" NVARCHAR2(255) NULL,
 
 	"Марка" NVARCHAR2(255) NULL,
 
-	"ЛицеКартНомер" NUMBER(10) NULL,
+	"Наименование" NVARCHAR2(255) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -83,15 +85,15 @@ CREATE TABLE "ТЧПлЗНаД"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"СтЗатрат" NVARCHAR2(255) NULL,
+	"ВремПриб" DATE NULL,
 
 	"ОбРаб" NVARCHAR2(255) NULL,
 
-	"ВремПриб" DATE NULL,
+	"ОбГруз" FLOAT(53) NULL,
+
+	"СтЗатрат" NVARCHAR2(255) NULL,
 
 	"КолЧас" FLOAT(53) NULL,
-
-	"ОбГруз" FLOAT(53) NULL,
 
 	"СпрТипТрансСр" RAW(16) NOT NULL,
 

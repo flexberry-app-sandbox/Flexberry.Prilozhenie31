@@ -33,6 +33,7 @@ namespace IIS.Prilozhenie_3
             "Код as \'Код\'",
             "ВидПеревоз as \'Вид перевозки\'",
             "ГосНомер as \'Государственный номер\'",
+            "Наименование as \'Наименование\'",
             "ГрузПодъемВТон as \'Грузоподъемность в тоннах\'",
             "Марка as \'Марка\'",
             "ЛицеКартНомер as \'Лицензионная карточка (номер)\'"})]
@@ -42,21 +43,24 @@ namespace IIS.Prilozhenie_3
             "ГосНомер as \'Государственный номер\'",
             "ГрузПодъемВТон as \'Грузоподъемность в тоннах\'",
             "Марка as \'Марка\'",
-            "ЛицеКартНомер as \'Лицензионная карточка (номер)\'"})]
+            "ЛицеКартНомер as \'Лицензионная карточка (номер)\'",
+            "Наименование as \'Наименование\'"})]
     public class СпрТранспСр : ICSSoft.STORMNET.DataObject
     {
         
-        private int fКод;
-        
-        private string fВидПеревоз;
+        private string fГрузПодъемВТон;
         
         private string fГосНомер;
         
-        private string fГрузПодъемВТон;
+        private int fКод;
+        
+        private int fЛицеКартНомер;
+        
+        private string fВидПеревоз;
         
         private string fМарка;
         
-        private int fЛицеКартНомер;
+        private string fНаименование;
         
         // *** Start programmer edit section *** (СпрТранспСр CustomMembers)
 
@@ -250,6 +254,38 @@ namespace IIS.Prilozhenie_3
                 // *** Start programmer edit section *** (СпрТранспСр.Марка Set end)
 
                 // *** End programmer edit section *** (СпрТранспСр.Марка Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Наименование.
+        /// </summary>
+        // *** Start programmer edit section *** (СпрТранспСр.Наименование CustomAttributes)
+
+        // *** End programmer edit section *** (СпрТранспСр.Наименование CustomAttributes)
+        [StrLen(255)]
+        public virtual string Наименование
+        {
+            get
+            {
+                // *** Start programmer edit section *** (СпрТранспСр.Наименование Get start)
+
+                // *** End programmer edit section *** (СпрТранспСр.Наименование Get start)
+                string result = this.fНаименование;
+                // *** Start programmer edit section *** (СпрТранспСр.Наименование Get end)
+
+                // *** End programmer edit section *** (СпрТранспСр.Наименование Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (СпрТранспСр.Наименование Set start)
+
+                // *** End programmer edit section *** (СпрТранспСр.Наименование Set start)
+                this.fНаименование = value;
+                // *** Start programmer edit section *** (СпрТранспСр.Наименование Set end)
+
+                // *** End programmer edit section *** (СпрТранспСр.Наименование Set end)
             }
         }
         

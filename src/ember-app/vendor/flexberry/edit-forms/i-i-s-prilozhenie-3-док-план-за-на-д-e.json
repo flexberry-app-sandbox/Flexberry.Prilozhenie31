@@ -31,6 +31,38 @@
       "relationName": "ТЧПлЗНаД.СпрКонтрАг",
       "projection": "СпрКонтрАгL",
       "detailModelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрНомен",
+      "displayAttributeName": "номенклатура",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрНомен",
+      "projection": "СпрНоменL",
+      "detailModelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрВидыРаб",
+      "displayAttributeName": "виды работы",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрВидыРаб",
+      "projection": "СпрВидыРабL",
+      "detailModelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрТранспСр",
+      "displayAttributeName": "транспортное средство",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрТранспСр",
+      "projection": "СпрТранспСрL",
+      "detailModelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрТипТрансСр",
+      "displayAttributeName": "типы транспортного средства",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрТипТрансСр",
+      "projection": "СпрТипТрансСрL",
+      "detailModelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д"
     }
   ],
   "external": false,
