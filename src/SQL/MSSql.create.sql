@@ -137,6 +137,45 @@ CREATE TABLE [СпрЕдИзмер] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [ТЧФактВыпР] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [ВрПриб] VARCHAR(255)  NULL,
+
+	 [ВрУб] VARCHAR(255)  NULL,
+
+	 [КдПрост] REAL  NULL,
+
+	 [КлЧасНОб] REAL  NULL,
+
+	 [КолЧасПр] REAL  NULL,
+
+	 [КолЧасРаб] REAL  NULL,
+
+	 [ОбГруз] REAL  NULL,
+
+	 [ОбРаб] VARCHAR(255)  NULL,
+
+	 [СтатЗатр] VARCHAR(255)  NULL,
+
+	 [СпрВидыРаб] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрЕдИзмер] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрКонтрАг] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрНомен] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрТипТрансСр] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрТранспСр] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [ФактВыполРаб] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [СпрВидыРаб] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

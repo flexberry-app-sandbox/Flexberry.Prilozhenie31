@@ -81,6 +81,27 @@ CREATE TABLE СпрЕдИзмер (
  PRIMARY KEY (primaryKey));
 
 
+CREATE TABLE ТЧФактВыпР (
+ primaryKey UUID NOT NULL,
+ СтатЗатр VARCHAR(255) NULL,
+ ОбРаб VARCHAR(255) NULL,
+ ВрПриб VARCHAR(255) NULL,
+ ВрУб VARCHAR(255) NULL,
+ КлЧасНОб REAL NULL,
+ КдПрост REAL NULL,
+ ОбГруз REAL NULL,
+ КолЧасПр REAL NULL,
+ КолЧасРаб REAL NULL,
+ СпрТипТрансСр UUID NOT NULL,
+ СпрЕдИзмер UUID NOT NULL,
+ СпрТранспСр UUID NOT NULL,
+ СпрВидыРаб UUID NOT NULL,
+ СпрНомен UUID NOT NULL,
+ СпрКонтрАг UUID NOT NULL,
+ ФактВыполРаб UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE СпрВидыРаб (
  primaryKey UUID NOT NULL,
  Код INT NULL,
@@ -252,6 +273,27 @@ CREATE INDEX Indexc68eeee92fec27be705024a03c2f90e0995b68a2 on ТЧПлЗНаД (
 
  ALTER TABLE ТЧПлЗНаД ADD CONSTRAINT FK03d677498857c017bb3c050822879fa2032345bb FOREIGN KEY (ДокПланЗаНаД) REFERENCES ДокПланЗаНаД; 
 CREATE INDEX Index03d677498857c017bb3c050822879fa2032345bb on ТЧПлЗНаД (ДокПланЗаНаД); 
+
+ ALTER TABLE ТЧФактВыпР ADD CONSTRAINT FKa94752ca7352240e6dd220da72486eef451e6c78 FOREIGN KEY (СпрТипТрансСр) REFERENCES СпрТипТрансСр; 
+CREATE INDEX Indexa94752ca7352240e6dd220da72486eef451e6c78 on ТЧФактВыпР (СпрТипТрансСр); 
+
+ ALTER TABLE ТЧФактВыпР ADD CONSTRAINT FK6275d261ab173ca2d27b64cec0e1e0906fcd832f FOREIGN KEY (СпрЕдИзмер) REFERENCES СпрЕдИзмер; 
+CREATE INDEX Index6275d261ab173ca2d27b64cec0e1e0906fcd832f on ТЧФактВыпР (СпрЕдИзмер); 
+
+ ALTER TABLE ТЧФактВыпР ADD CONSTRAINT FK1baf6daf2cf71b9c15b675ae70737cd8ee4b826b FOREIGN KEY (СпрТранспСр) REFERENCES СпрТранспСр; 
+CREATE INDEX Index1baf6daf2cf71b9c15b675ae70737cd8ee4b826b on ТЧФактВыпР (СпрТранспСр); 
+
+ ALTER TABLE ТЧФактВыпР ADD CONSTRAINT FK054b15d9d239a45e342dbd0f6d0adb82de48efad FOREIGN KEY (СпрВидыРаб) REFERENCES СпрВидыРаб; 
+CREATE INDEX Index054b15d9d239a45e342dbd0f6d0adb82de48efad on ТЧФактВыпР (СпрВидыРаб); 
+
+ ALTER TABLE ТЧФактВыпР ADD CONSTRAINT FK21ddde601a38b71cb1dd6e8b07dd823edd632b90 FOREIGN KEY (СпрНомен) REFERENCES СпрНомен; 
+CREATE INDEX Index21ddde601a38b71cb1dd6e8b07dd823edd632b90 on ТЧФактВыпР (СпрНомен); 
+
+ ALTER TABLE ТЧФактВыпР ADD CONSTRAINT FKdd617b8ca0ea6695b82a76c9383d70de025b28b5 FOREIGN KEY (СпрКонтрАг) REFERENCES СпрКонтрАг; 
+CREATE INDEX Indexdd617b8ca0ea6695b82a76c9383d70de025b28b5 on ТЧФактВыпР (СпрКонтрАг); 
+
+ ALTER TABLE ТЧФактВыпР ADD CONSTRAINT FK410aa85b9390a2f524bfd6f66ce93219449b19ff FOREIGN KEY (ФактВыполРаб) REFERENCES ФактВыполРаб; 
+CREATE INDEX Index410aa85b9390a2f524bfd6f66ce93219449b19ff on ТЧФактВыпР (ФактВыполРаб); 
 
  ALTER TABLE СпрВидыРаб ADD CONSTRAINT FK105cacd2a93f6230c3c135143070c3ef1c4dd0c1 FOREIGN KEY (СпрЕдИзмер) REFERENCES СпрЕдИзмер; 
 CREATE INDEX Index105cacd2a93f6230c3c135143070c3ef1c4dd0c1 on СпрВидыРаб (СпрЕдИзмер); 

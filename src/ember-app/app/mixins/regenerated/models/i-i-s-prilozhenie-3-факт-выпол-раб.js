@@ -10,7 +10,8 @@ export let Model = Mixin.create({
   номер: DS.attr('number'),
   спрКонтрАг: DS.belongsTo('i-i-s-prilozhenie-3-спр-контр-аг', { inverse: null, async: false }),
   спрОбъектСтр: DS.belongsTo('i-i-s-prilozhenie-3-спр-объект-стр', { inverse: null, async: false }),
-  спрПользов: DS.belongsTo('i-i-s-prilozhenie-3-спр-пользов', { inverse: null, async: false })
+  спрПользов: DS.belongsTo('i-i-s-prilozhenie-3-спр-пользов', { inverse: null, async: false }),
+  тЧФактВыпР: DS.hasMany('i-i-s-prilozhenie-3-т-ч-факт-вып-р', { inverse: 'фактВыполРаб', async: false })
 });
 
 export let ValidationRules = {
@@ -53,6 +54,13 @@ export let ValidationRules = {
     validators: [
       validator('ds-error'),
       validator('presence', true),
+    ],
+  },
+  тЧФактВыпР: {
+    descriptionKey: 'models.i-i-s-prilozhenie-3-факт-выпол-раб.validations.тЧФактВыпР.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
     ],
   },
 };

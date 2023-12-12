@@ -151,6 +151,47 @@ CREATE TABLE "СпрЕдИзмер"
 ) ;
 
 
+CREATE TABLE "ТЧФактВыпР"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"СтатЗатр" NVARCHAR2(255) NULL,
+
+	"ОбРаб" NVARCHAR2(255) NULL,
+
+	"ВрПриб" NVARCHAR2(255) NULL,
+
+	"ВрУб" NVARCHAR2(255) NULL,
+
+	"КлЧасНОб" FLOAT(53) NULL,
+
+	"КдПрост" FLOAT(53) NULL,
+
+	"ОбГруз" FLOAT(53) NULL,
+
+	"КолЧасПр" FLOAT(53) NULL,
+
+	"КолЧасРаб" FLOAT(53) NULL,
+
+	"СпрТипТрансСр" RAW(16) NOT NULL,
+
+	"СпрЕдИзмер" RAW(16) NOT NULL,
+
+	"СпрТранспСр" RAW(16) NOT NULL,
+
+	"СпрВидыРаб" RAW(16) NOT NULL,
+
+	"СпрНомен" RAW(16) NOT NULL,
+
+	"СпрКонтрАг" RAW(16) NOT NULL,
+
+	"ФактВыполРаб" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "СпрВидыРаб"
 (
 
@@ -469,6 +510,41 @@ ALTER TABLE "ТЧПлЗНаД"
 	ADD CONSTRAINT "ТЧПлЗНаД_FДокП_53" FOREIGN KEY ("ДокПланЗаНаД") REFERENCES "ДокПланЗаНаД" ("primaryKey");
 
 CREATE INDEX "ТЧПлЗНаД_IДок_8772" on "ТЧПлЗНаД" ("ДокПланЗаНаД");
+
+ALTER TABLE "ТЧФактВыпР"
+	ADD CONSTRAINT "ТЧФактВыпР_FС_3765" FOREIGN KEY ("СпрТипТрансСр") REFERENCES "СпрТипТрансСр" ("primaryKey");
+
+CREATE INDEX "ТЧФактВыпР_IСп_656" on "ТЧФактВыпР" ("СпрТипТрансСр");
+
+ALTER TABLE "ТЧФактВыпР"
+	ADD CONSTRAINT "ТЧФактВыпР_FС_6462" FOREIGN KEY ("СпрЕдИзмер") REFERENCES "СпрЕдИзмер" ("primaryKey");
+
+CREATE INDEX "ТЧФактВыпР_IС_7163" on "ТЧФактВыпР" ("СпрЕдИзмер");
+
+ALTER TABLE "ТЧФактВыпР"
+	ADD CONSTRAINT "ТЧФактВыпР_FС_8025" FOREIGN KEY ("СпрТранспСр") REFERENCES "СпрТранспСр" ("primaryKey");
+
+CREATE INDEX "ТЧФактВыпР_IС_6765" on "ТЧФактВыпР" ("СпрТранспСр");
+
+ALTER TABLE "ТЧФактВыпР"
+	ADD CONSTRAINT "ТЧФактВыпР_FС_3715" FOREIGN KEY ("СпрВидыРаб") REFERENCES "СпрВидыРаб" ("primaryKey");
+
+CREATE INDEX "ТЧФактВыпР_IС_6422" on "ТЧФактВыпР" ("СпрВидыРаб");
+
+ALTER TABLE "ТЧФактВыпР"
+	ADD CONSTRAINT "ТЧФактВыпР_FС_2263" FOREIGN KEY ("СпрНомен") REFERENCES "СпрНомен" ("primaryKey");
+
+CREATE INDEX "ТЧФактВыпР_IС_9135" on "ТЧФактВыпР" ("СпрНомен");
+
+ALTER TABLE "ТЧФактВыпР"
+	ADD CONSTRAINT "ТЧФактВыпР_FС_8992" FOREIGN KEY ("СпрКонтрАг") REFERENCES "СпрКонтрАг" ("primaryKey");
+
+CREATE INDEX "ТЧФактВыпР_IС_2811" on "ТЧФактВыпР" ("СпрКонтрАг");
+
+ALTER TABLE "ТЧФактВыпР"
+	ADD CONSTRAINT "ТЧФактВыпР_FФ_2357" FOREIGN KEY ("ФактВыполРаб") REFERENCES "ФактВыполРаб" ("primaryKey");
+
+CREATE INDEX "ТЧФактВыпР_IФ_9215" on "ТЧФактВыпР" ("ФактВыполРаб");
 
 ALTER TABLE "СпрВидыРаб"
 	ADD CONSTRAINT "СпрВидыРаб_FС_5946" FOREIGN KEY ("СпрЕдИзмер") REFERENCES "СпрЕдИзмер" ("primaryKey");

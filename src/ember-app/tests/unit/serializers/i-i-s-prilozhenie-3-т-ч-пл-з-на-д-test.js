@@ -19,6 +19,7 @@ moduleForModel('i-i-s-prilozhenie-3-т-ч-пл-з-на-д', 'Unit | Serializer |
     'model:i-i-s-prilozhenie-3-спр-тип-транс-ср',
     'model:i-i-s-prilozhenie-3-спр-трансп-ср',
     'model:i-i-s-prilozhenie-3-т-ч-пл-з-на-д',
+    'model:i-i-s-prilozhenie-3-т-ч-факт-вып-р',
     'model:i-i-s-prilozhenie-3-факт-выпол-раб',
     'validator:ds-error',
     'validator:presence',

@@ -31,6 +31,7 @@ import IISPrilozhenie_3СпрПользовModel from './models/i-i-s-prilozheni
 import IISPrilozhenie_3СпрТипТрансСрModel from './models/i-i-s-prilozhenie-3-спр-тип-транс-ср';
 import IISPrilozhenie_3СпрТранспСрModel from './models/i-i-s-prilozhenie-3-спр-трансп-ср';
 import IISPrilozhenie_3ТЧПлЗНаДModel from './models/i-i-s-prilozhenie-3-т-ч-пл-з-на-д';
+import IISPrilozhenie_3ТЧФактВыпРModel from './models/i-i-s-prilozhenie-3-т-ч-факт-вып-р';
 import IISPrilozhenie_3ФактВыполРабModel from './models/i-i-s-prilozhenie-3-факт-выпол-раб';
 
 const translations = {};
@@ -48,6 +49,7 @@ $.extend(true, translations, {
     'i-i-s-prilozhenie-3-спр-тип-транс-ср': IISPrilozhenie_3СпрТипТрансСрModel,
     'i-i-s-prilozhenie-3-спр-трансп-ср': IISPrilozhenie_3СпрТранспСрModel,
     'i-i-s-prilozhenie-3-т-ч-пл-з-на-д': IISPrilozhenie_3ТЧПлЗНаДModel,
+    'i-i-s-prilozhenie-3-т-ч-факт-вып-р': IISPrilozhenie_3ТЧФактВыпРModel,
     'i-i-s-prilozhenie-3-факт-выпол-раб': IISPrilozhenie_3ФактВыполРабModel
   },
 

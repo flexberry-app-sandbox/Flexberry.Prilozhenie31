@@ -61,6 +61,8 @@ namespace IIS.Prilozhenie_3
         
         private IIS.Prilozhenie_3.СпрОбъектСтр fСпрОбъектСтр;
         
+        private IIS.Prilozhenie_3.DetailArrayOfТЧФактВыпР fТЧФактВыпР;
+        
         // *** Start programmer edit section *** (ФактВыполРаб CustomMembers)
 
         // *** End programmer edit section *** (ФактВыполРаб CustomMembers)
@@ -259,6 +261,41 @@ namespace IIS.Prilozhenie_3
                 // *** Start programmer edit section *** (ФактВыполРаб.СпрПользов Set end)
 
                 // *** End programmer edit section *** (ФактВыполРаб.СпрПользов Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Факт выпол раб.
+        /// </summary>
+        // *** Start programmer edit section *** (ФактВыполРаб.ТЧФактВыпР CustomAttributes)
+
+        // *** End programmer edit section *** (ФактВыполРаб.ТЧФактВыпР CustomAttributes)
+        public virtual IIS.Prilozhenie_3.DetailArrayOfТЧФактВыпР ТЧФактВыпР
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ФактВыполРаб.ТЧФактВыпР Get start)
+
+                // *** End programmer edit section *** (ФактВыполРаб.ТЧФактВыпР Get start)
+                if ((this.fТЧФактВыпР == null))
+                {
+                    this.fТЧФактВыпР = new IIS.Prilozhenie_3.DetailArrayOfТЧФактВыпР(this);
+                }
+                IIS.Prilozhenie_3.DetailArrayOfТЧФактВыпР result = this.fТЧФактВыпР;
+                // *** Start programmer edit section *** (ФактВыполРаб.ТЧФактВыпР Get end)
+
+                // *** End programmer edit section *** (ФактВыполРаб.ТЧФактВыпР Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ФактВыполРаб.ТЧФактВыпР Set start)
+
+                // *** End programmer edit section *** (ФактВыполРаб.ТЧФактВыпР Set start)
+                this.fТЧФактВыпР = value;
+                // *** Start programmer edit section *** (ФактВыполРаб.ТЧФактВыпР Set end)
+
+                // *** End programmer edit section *** (ФактВыполРаб.ТЧФактВыпР Set end)
             }
         }
         

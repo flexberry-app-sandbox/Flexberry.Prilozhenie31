@@ -57,7 +57,13 @@
       "inverse": null
     }
   ],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "тЧФактВыпР",
+      "relatedTo": "i-i-s-prilozhenie-3-т-ч-факт-вып-р",
+      "inverse": "фактВыполРаб"
+    }
+  ],
   "projections": [
     {
       "name": "ФактВыполРабE",
