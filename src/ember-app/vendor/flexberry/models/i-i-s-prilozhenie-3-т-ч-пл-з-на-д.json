@@ -108,7 +108,32 @@
     {
       "name": "ТЧПлЗНаДE",
       "modelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д",
-      "attrs": [],
+      "attrs": [
+        {
+          "name": "стЗатрат",
+          "caption": "Статья затрат",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "обРаб",
+          "caption": "Объем работ",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "времПриб",
+          "caption": "Время прибытия",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "колЧас",
+          "caption": "Количество часов работы",
+          "hidden": false,
+          "index": 13
+        }
+      ],
       "belongsTo": [
         {
           "lookupValue": "Контрагент",
@@ -121,10 +146,10 @@
               "name": "наименование",
               "caption": "Контрагент",
               "hidden": false,
-              "index": 1
+              "index": 2
             }
           ],
-          "index": 0,
+          "index": 1,
           "type": "standard",
           "caption": "Контрагент",
           "name": "спрКонтрАг",
@@ -142,10 +167,10 @@
               "name": "наименование",
               "caption": "Номенклатура",
               "hidden": false,
-              "index": 3
+              "index": 4
             }
           ],
-          "index": 2,
+          "index": 3,
           "type": "standard",
           "caption": "Номенклатура",
           "name": "спрНомен",
@@ -163,10 +188,10 @@
               "name": "наименование",
               "caption": "Виды работы",
               "hidden": false,
-              "index": 5
+              "index": 6
             }
           ],
-          "index": 4,
+          "index": 5,
           "type": "standard",
           "caption": "Виды работы",
           "name": "спрВидыРаб",
@@ -184,10 +209,10 @@
               "name": "наименование",
               "caption": "Транспортное средство",
               "hidden": false,
-              "index": 7
+              "index": 9
             }
           ],
-          "index": 6,
+          "index": 8,
           "type": "standard",
           "caption": "Транспортное средство",
           "name": "спрТранспСр",
@@ -205,14 +230,35 @@
               "name": "наименование",
               "caption": "Типы транспортного средства",
               "hidden": false,
-              "index": 9
+              "index": 11
             }
           ],
-          "index": 8,
+          "index": 10,
           "type": "standard",
           "caption": "Типы транспортного средства",
           "name": "спрТипТрансСр",
           "relatedTo": "i-i-s-prilozhenie-3-спр-тип-транс-ср",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Единицы измерения",
+          "lookupValueField": "единицы измерения",
+          "relationName": "СпрЕдИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Единицы измерения",
+              "hidden": false,
+              "index": 15
+            }
+          ],
+          "index": 14,
+          "type": "standard",
+          "caption": "Единицы измерения",
+          "name": "спрЕдИзмер",
+          "relatedTo": "i-i-s-prilozhenie-3-спр-ед-измер",
           "inverse": null
         }
       ],

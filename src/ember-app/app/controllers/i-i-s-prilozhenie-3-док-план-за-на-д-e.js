@@ -67,6 +67,18 @@ export default EditFormController.extend({
           };
           break;
 
+        case 'i-i-s-prilozhenie-3-т-ч-пл-з-на-д+спрЕдИзмер':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'единицы измерения',
+            required: true,
+            relationName: 'спрЕдИзмер',
+            projection: 'СпрЕдИзмерL',
+            autocomplete: true,
+          };
+          break;
+
       }
     }
 

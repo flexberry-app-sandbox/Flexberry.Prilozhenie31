@@ -106,20 +106,27 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ТЧПлЗНаДE', 'i-i-s-prilozhenie-3-т-ч-пл-з-на-д', {
+    стЗатрат: attr('Статья затрат', { index: 0 }),
     спрКонтрАг: belongsTo('i-i-s-prilozhenie-3-спр-контр-аг', 'Контрагент', {
-      наименование: attr('Контрагент', { index: 1 })
-    }, { index: 0, displayMemberPath: 'контрагент' }),
+      наименование: attr('Контрагент', { index: 2 })
+    }, { index: 1, displayMemberPath: 'контрагент' }),
     спрНомен: belongsTo('i-i-s-prilozhenie-3-спр-номен', 'Номенклатура', {
-      наименование: attr('Номенклатура', { index: 3 })
-    }, { index: 2, displayMemberPath: 'номенклатура' }),
+      наименование: attr('Номенклатура', { index: 4 })
+    }, { index: 3, displayMemberPath: 'номенклатура' }),
     спрВидыРаб: belongsTo('i-i-s-prilozhenie-3-спр-виды-раб', 'Виды работы', {
-      наименование: attr('Виды работы', { index: 5 })
-    }, { index: 4, displayMemberPath: 'виды работы' }),
+      наименование: attr('Виды работы', { index: 6 })
+    }, { index: 5, displayMemberPath: 'виды работы' }),
+    обРаб: attr('Объем работ', { index: 7 }),
     спрТранспСр: belongsTo('i-i-s-prilozhenie-3-спр-трансп-ср', 'Транспортное средство', {
-      наименование: attr('Транспортное средство', { index: 7 })
-    }, { index: 6, displayMemberPath: 'транспортное средство' }),
+      наименование: attr('Транспортное средство', { index: 9 })
+    }, { index: 8, displayMemberPath: 'транспортное средство' }),
     спрТипТрансСр: belongsTo('i-i-s-prilozhenie-3-спр-тип-транс-ср', 'Типы транспортного средства', {
-      наименование: attr('Типы транспортного средства', { index: 9 })
-    }, { index: 8, displayMemberPath: 'типы транспортного средства' })
+      наименование: attr('Типы транспортного средства', { index: 11 })
+    }, { index: 10, displayMemberPath: 'типы транспортного средства' }),
+    времПриб: attr('Время прибытия', { index: 12 }),
+    колЧас: attr('Количество часов работы', { index: 13 }),
+    спрЕдИзмер: belongsTo('i-i-s-prilozhenie-3-спр-ед-измер', 'Единицы измерения', {
+      наименование: attr('Единицы измерения', { index: 15 })
+    }, { index: 14, displayMemberPath: 'единицы измерения' })
   });
 };

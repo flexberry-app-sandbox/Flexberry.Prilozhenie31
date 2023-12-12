@@ -63,6 +63,14 @@
       "relationName": "ТЧПлЗНаД.СпрТипТрансСр",
       "projection": "СпрТипТрансСрL",
       "detailModelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрЕдИзмер",
+      "displayAttributeName": "единицы измерения",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрЕдИзмер",
+      "projection": "СпрЕдИзмерL",
+      "detailModelName": "i-i-s-prilozhenie-3-т-ч-пл-з-на-д"
     }
   ],
   "external": false,
