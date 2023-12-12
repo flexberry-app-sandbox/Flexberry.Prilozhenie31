@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрПользов",
+      "projection": "СпрПользовL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрКонтрАг",
+      "projection": "СпрКонтрАгL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрОбъектСтр",
+      "projection": "СпрОбъектСтрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Факт выпол раб",
+  "name": "IISPrilozhenie_3ФактВыполРабE",
+  "className": "ФактВыполРабE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-3-факт-выпол-раб",
+      "modelProjection": "ФактВыполРабE"
+    }
+  ]
+}

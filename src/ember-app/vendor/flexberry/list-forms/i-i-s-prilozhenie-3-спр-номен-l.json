@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-3-спр-номен-e",
+  "editForm": "i-i-s-prilozhenie-3-спр-номен-e",
+  "external": false,
+  "caption": "Спр номен",
+  "name": "IISPrilozhenie_3СпрНоменL",
+  "className": "СпрНоменL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-3-спр-номен",
+      "modelProjection": "СпрНоменL"
+    }
+  ]
+}

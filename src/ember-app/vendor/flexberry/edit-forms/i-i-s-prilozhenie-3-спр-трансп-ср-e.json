@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Спр трансп ср",
+  "name": "IISPrilozhenie_3СпрТранспСрE",
+  "className": "СпрТранспСрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-3-спр-трансп-ср",
+      "modelProjection": "СпрТранспСрE"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+﻿{
+  "applicationCaption": "Prilozhenie_3",
+  "applicationTitle": "Prilozhenie_3",
+  "items": [
+    {
+      "link": null,
+      "menuName": "prilozhenie-3",
+      "caption": "Prilozhenie_3",
+      "title": "Prilozhenie_3",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-3-док-план-за-на-д-l",
+          "menuName": null,
+          "caption": "Документ плановая заявка на день",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-3-спр-тип-транс-ср-l",
+          "menuName": null,
+          "caption": "Справочник тип транспортного средства",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-3-спр-трансп-ср-l",
+          "menuName": null,
+          "caption": "Справочник транспортное средство",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-3-спр-номен-l",
+          "menuName": null,
+          "caption": "Справочник номенклатура",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-3-спр-контр-аг-l",
+          "menuName": null,
+          "caption": "Справочник контрагенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-3-спр-ед-измер-l",
+          "menuName": null,
+          "caption": "Справочник единицы измерения",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-3-спр-виды-раб-l",
+          "menuName": null,
+          "caption": "Справочник виды работ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-3-спр-объект-стр-l",
+          "menuName": null,
+          "caption": "Справочник объект строительства",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-3-спр-пользов-l",
+          "menuName": null,
+          "caption": "Справочник пользователи",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-3-факт-выпол-раб-l",
+          "menuName": null,
+          "caption": "Фактическое выполнение работ",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

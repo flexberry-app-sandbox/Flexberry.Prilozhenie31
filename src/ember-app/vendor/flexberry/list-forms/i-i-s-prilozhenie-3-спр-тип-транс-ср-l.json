@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-3-спр-тип-транс-ср-e",
+  "editForm": "i-i-s-prilozhenie-3-спр-тип-транс-ср-e",
+  "external": false,
+  "caption": "Спр тип транс ср",
+  "name": "IISPrilozhenie_3СпрТипТрансСрL",
+  "className": "СпрТипТрансСрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-3-спр-тип-транс-ср",
+      "modelProjection": "СпрТипТрансСрL"
+    }
+  ]
+}

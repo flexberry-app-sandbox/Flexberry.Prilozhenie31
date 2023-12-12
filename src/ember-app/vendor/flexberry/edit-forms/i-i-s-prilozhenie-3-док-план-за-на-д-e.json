@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрПользов",
+      "projection": "СпрПользовL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрКонтрАг",
+      "projection": "СпрКонтрАгL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрОбъектСтр",
+      "projection": "СпрОбъектСтрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Док план за на Д",
+  "name": "IISPrilozhenie_3ДокПланЗаНаДE",
+  "className": "ДокПланЗаНаДE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-3-док-план-за-на-д",
+      "modelProjection": "ДокПланЗаНаДE"
+    }
+  ]
+}
