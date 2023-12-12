@@ -82,22 +82,7 @@ export let defineProjections = function (modelClass) {
     тЧФактВыпР: hasMany('i-i-s-prilozhenie-3-т-ч-факт-вып-р', 'Фактическое выполнение работ', {
       спрНомен: belongsTo('i-i-s-prilozhenie-3-спр-номен', 'Номенклатура', {
         наименование: attr('Номенклатура', { index: 1 })
-      }, { index: 0, displayMemberPath: 'номенклатура' }),
-      спрКонтрАг: belongsTo('i-i-s-prilozhenie-3-спр-контр-аг', 'Контрагент', {
-        наименование: attr('Контрагент', { index: 3 })
-      }, { index: 2, displayMemberPath: 'контрагент' }),
-      спрВидыРаб: belongsTo('i-i-s-prilozhenie-3-спр-виды-раб', 'Вид работы', {
-        наименование: attr('Вид работы', { index: 5 })
-      }, { index: 4, displayMemberPath: 'вид работы' }),
-      спрТранспСр: belongsTo('i-i-s-prilozhenie-3-спр-трансп-ср', 'Транспортное средство', {
-        наименование: attr('Транспортное средство', { index: 7 })
-      }, { index: 6 }),
-      спрТипТрансСр: belongsTo('i-i-s-prilozhenie-3-спр-тип-транс-ср', 'Тип транспортного средства', {
-        наименование: attr('Тип транспортного средства', { index: 9 })
-      }, { index: 8, displayMemberPath: 'тип транспортного средства' }),
-      спрЕдИзмер: belongsTo('i-i-s-prilozhenie-3-спр-ед-измер', 'Единицы измерения', {
-        наименование: attr('Единицы измерения', { index: 11 })
-      }, { index: 10, displayMemberPath: 'единицы измерения' })
+      }, { index: 0, displayMemberPath: 'номенклатура' })
     })
   });
 

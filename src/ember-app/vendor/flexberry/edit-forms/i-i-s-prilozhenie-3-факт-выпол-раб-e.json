@@ -31,46 +31,6 @@
       "relationName": "ТЧФактВыпР.СпрНомен",
       "projection": "СпрНоменL",
       "detailModelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р"
-    },
-    {
-      "master": "спрКонтрАг",
-      "displayAttributeName": "контрагент",
-      "required": true,
-      "relationName": "ТЧФактВыпР.СпрКонтрАг",
-      "projection": "СпрКонтрАгL",
-      "detailModelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р"
-    },
-    {
-      "master": "спрВидыРаб",
-      "displayAttributeName": "вид работы",
-      "required": true,
-      "relationName": "ТЧФактВыпР.СпрВидыРаб",
-      "projection": "СпрВидыРабL",
-      "detailModelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р"
-    },
-    {
-      "master": "спрТранспСр",
-      "displayAttributeName": null,
-      "required": true,
-      "relationName": "ТЧФактВыпР.СпрТранспСр",
-      "projection": "СпрТранспСрL",
-      "detailModelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р"
-    },
-    {
-      "master": "спрТипТрансСр",
-      "displayAttributeName": "тип транспортного средства",
-      "required": true,
-      "relationName": "ТЧФактВыпР.СпрТипТрансСр",
-      "projection": "СпрТипТрансСрL",
-      "detailModelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р"
-    },
-    {
-      "master": "спрЕдИзмер",
-      "displayAttributeName": "единицы измерения",
-      "required": true,
-      "relationName": "ТЧФактВыпР.СпрЕдИзмер",
-      "projection": "СпрЕдИзмерL",
-      "detailModelName": "i-i-s-prilozhenie-3-т-ч-факт-вып-р"
     }
   ],
   "external": false,
