@@ -91,9 +91,9 @@ CREATE TABLE "ТЧПлЗНаД"
 
 	"ОбГруз" FLOAT(53) NULL,
 
-	"СтЗатрат" NVARCHAR2(255) NULL,
-
 	"КолЧас" FLOAT(53) NULL,
+
+	"СтЗатрат" NVARCHAR2(255) NULL,
 
 	"СпрТипТрансСр" RAW(16) NOT NULL,
 

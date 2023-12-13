@@ -2,7 +2,7 @@
   "newForm": "i-i-s-prilozhenie-3-факт-выпол-раб-e",
   "editForm": "i-i-s-prilozhenie-3-факт-выпол-раб-e",
   "external": false,
-  "caption": "Факт выпол раб",
+  "caption": "Документ Фактическое выполнение работ",
   "name": "IISPrilozhenie_3ФактВыполРабL",
   "className": "ФактВыполРабL",
   "attrs": [],

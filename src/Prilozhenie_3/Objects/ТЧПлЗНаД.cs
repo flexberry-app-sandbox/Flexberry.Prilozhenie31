@@ -60,9 +60,9 @@ namespace IIS.Prilozhenie_3
         
         private float fОбГруз;
         
-        private string fСтЗатрат;
-        
         private float fКолЧас;
+        
+        private string fСтЗатрат;
         
         private IIS.Prilozhenie_3.СпрТипТрансСр fСпрТипТрансСр;
         

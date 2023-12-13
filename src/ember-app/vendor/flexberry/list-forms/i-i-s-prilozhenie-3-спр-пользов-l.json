@@ -2,7 +2,7 @@
   "newForm": "i-i-s-prilozhenie-3-спр-пользов-e",
   "editForm": "i-i-s-prilozhenie-3-спр-пользов-e",
   "external": false,
-  "caption": "Спр пользов",
+  "caption": "Справочник пользователи",
   "name": "IISPrilozhenie_3СпрПользовL",
   "className": "СпрПользовL",
   "attrs": [],

@@ -116,6 +116,50 @@ $.extend(true, translations, {
           caption: 'Home',
           title: ''
         },
+        'диспетчеризация-транспортных-средств': {
+          caption: 'Диспетчеризация транспортных средств',
+          title: 'Диспетчеризация транспортных средств',
+          'i-i-s-prilozhenie-3-док-план-за-на-д-l': {
+            caption: 'Документ плановая заявка на день',
+            title: ''
+          },
+          'i-i-s-prilozhenie-3-спр-тип-транс-ср-l': {
+            caption: 'Справочник тип транспортного средства',
+            title: ''
+          },
+          'i-i-s-prilozhenie-3-спр-трансп-ср-l': {
+            caption: 'Справочник транспортное средство',
+            title: ''
+          },
+          'i-i-s-prilozhenie-3-спр-номен-l': {
+            caption: 'Справочник номенклатура',
+            title: ''
+          },
+          'i-i-s-prilozhenie-3-спр-контр-аг-l': {
+            caption: 'Справочник контрагенты',
+            title: ''
+          },
+          'i-i-s-prilozhenie-3-спр-ед-измер-l': {
+            caption: 'Справочник единицы измерения',
+            title: ''
+          },
+          'i-i-s-prilozhenie-3-спр-виды-раб-l': {
+            caption: 'Справочник виды работ',
+            title: ''
+          },
+          'i-i-s-prilozhenie-3-спр-объект-стр-l': {
+            caption: 'Справочник объект строительства',
+            title: ''
+          },
+          'i-i-s-prilozhenie-3-спр-пользов-l': {
+            caption: 'Справочник пользователи',
+            title: ''
+          },
+          'i-i-s-prilozhenie-3-факт-выпол-раб-l': {
+            caption: 'Документ фактическое выполнение работ',
+            title: ''
+          }
+        },
         'prilozhenie-3': {
           caption: 'Prilozhenie_3',
           title: 'Prilozhenie_3',

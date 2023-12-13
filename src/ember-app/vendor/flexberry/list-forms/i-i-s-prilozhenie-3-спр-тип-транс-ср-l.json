@@ -2,7 +2,7 @@
   "newForm": "i-i-s-prilozhenie-3-спр-тип-транс-ср-e",
   "editForm": "i-i-s-prilozhenie-3-спр-тип-транс-ср-e",
   "external": false,
-  "caption": "Спр тип транс ср",
+  "caption": "Справочник типы транспортного средства",
   "name": "IISPrilozhenie_3СпрТипТрансСрL",
   "className": "СпрТипТрансСрL",
   "attrs": [],

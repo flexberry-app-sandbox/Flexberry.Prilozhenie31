@@ -2,7 +2,7 @@
   "newForm": "i-i-s-prilozhenie-3-спр-ед-измер-e",
   "editForm": "i-i-s-prilozhenie-3-спр-ед-измер-e",
   "external": false,
-  "caption": "Спр ед измер",
+  "caption": "Справочник единицы измерения",
   "name": "IISPrilozhenie_3СпрЕдИзмерL",
   "className": "СпрЕдИзмерL",
   "attrs": [],

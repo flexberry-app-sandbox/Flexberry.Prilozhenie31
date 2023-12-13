@@ -4,9 +4,9 @@
   "items": [
     {
       "link": null,
-      "menuName": "prilozhenie-3",
-      "caption": "Prilozhenie_3",
-      "title": "Prilozhenie_3",
+      "menuName": "диспетчеризация-транспортных-средств",
+      "caption": "Диспетчеризация транспортных средств",
+      "title": "Диспетчеризация транспортных средств",
       "children": [
         {
           "link": "i-i-s-prilozhenie-3-док-план-за-на-д-l",
@@ -74,7 +74,7 @@
         {
           "link": "i-i-s-prilozhenie-3-факт-выпол-раб-l",
           "menuName": null,
-          "caption": "Фактическое выполнение работ",
+          "caption": "Документ фактическое выполнение работ",
           "title": "",
           "children": null
         }
